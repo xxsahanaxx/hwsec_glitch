@@ -9,11 +9,11 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project creates a hardware security glitch on a chip that can be detected using some methods of Trojan detection.  
 
 ## How to test
 
-Explain how to use your project
+In order to test our project, we must have a main PCB that connects the chip to multiple peripherals, and have ports/jumpers for side channels. 
 
 ## External hardware
 
