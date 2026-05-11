@@ -1,6 +1,6 @@
 `default_nettype none
 
-module tt_um_xxsahanaxx_aes(
+module tt_um_xxsahanaxx_hwsec_glitch(
     input wire RST_N,
     input wire SCK,
     input wire MOSI,
