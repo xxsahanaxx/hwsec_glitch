@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v hvsync_generator.v
+PROJECT_SOURCES = aes/aes_ks_static_128.v aes/aes_mixcolumns_inv.v aes/aes_mixcolumns.v aes/aes_sbox_lut.v aes/aes_sbox.v aes/aes_sboxes.v aes/aes_shiftrows_inv.v aes/aes_shiftrows.v aes_core_static_128.v shift_register.v spi_aes_top.v
 
 ifneq ($(GATES),yes)
 
@@ -35,7 +35,7 @@ endif
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v
+VERILOG_SOURCES += $(PWD)/aes_ks_static_128_tb.v $(PWD)/aes_core_tb.v $(PWD)/tb.v
 TOPLEVEL = tb
 
 # List test modules to run, separated by commas and without the .py suffix:

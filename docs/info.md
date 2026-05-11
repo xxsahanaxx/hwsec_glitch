@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This project creates a hardware security glitch on a chip that can be detected using some methods of Trojan detection.  
+This project incorporates AES-encryption on a chip, that can be glitched and obtained using some methods of Trojan detection.  
 
 ## How to test
 
