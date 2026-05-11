@@ -15,6 +15,8 @@ This project incorporates AES-encryption on a chip, that can be glitched and obt
 
 In order to test our project, we must have a main PCB that connects the chip to multiple peripherals, and have ports/jumpers for side channels. 
 
+On top of these requirements, we also have oscilloscopes and debug probes such as JLink to help identify the glitch.
+
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+For the purposes of this project, we use the Hackster board designed by my supervisor to inject glitches onto the PCB.
